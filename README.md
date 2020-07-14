@@ -39,3 +39,5 @@ This is the structure of this boilerplate:
 ├── README.md
 └── webpack.config.js
 ```
+
+Redux - a single place to keep track of your application state and then you can dispatch actions that run reducers and modify your state
