@@ -1,13 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import Words from './Words'
-import AddWord from './AddWord'
-
-const App = () => (
-  <div className='app-container'>
-    <Words />
-    <AddWord />
-  </div>
-)
+function App () {
+  const [count, setCount] = useState(5)
+  return <div className="App"><button>5</button></div>
+}
 
 export default App
