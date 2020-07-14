@@ -16,7 +16,6 @@ const mapDispatchToProps = {
 }
 
 const mapStateToProps = (state) => {
-  console.log('app:', state)
   return {
     myCount: state.rootReducer.count
   }
