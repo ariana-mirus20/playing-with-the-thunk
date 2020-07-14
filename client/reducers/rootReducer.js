@@ -1,4 +1,3 @@
-import { createStore } from 'redux'
 import { INCREMENT_COUNT } from '../actions/index'
 
 const initialState = {
@@ -17,4 +16,4 @@ const rootReducer = (state = initialState, action) => {
   }
 }
 
-export default createStore(rootReducer)
+export default rootReducer

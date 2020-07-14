@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addToCount } from '../actions/index'
+import { addToCountAction } from '../actions/index'
 
 // changeHandler = (evt) => {
 
@@ -21,17 +21,17 @@ import { addToCount } from '../actions/index'
 //   increaseCount(this.state)
 // }
 
-function App ({ addToCount, myCount }) {
+function App ({ addToCountAction, myCount }) {
   return (
     <div className="App">
-      <button onClick={addToCount}
+      <button onClick={addToCountAction}
       >{ myCount }
       </button>
     </div>)
 }
 
 const mapDispatchToProps = {
-  addToCount
+  addToCountAction
 }
 
 const mapStateToProps = (state) => {
