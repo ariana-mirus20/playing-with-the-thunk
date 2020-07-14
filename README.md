@@ -44,3 +44,5 @@ Redux - a single place to keep track of your application state and then you can 
 
 Why redux-thunk?
 With a plain basic Redux store, you can only do simple synchronous updates by dispatching an action. Middleware extend the store's abilities, and let you write async logic that interacts with the store.
+
+Store state can ONLY be modified by reducer functions.
