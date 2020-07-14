@@ -1,11 +1,43 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { connect } from 'react-redux'
+import { addToCount } from '../actions/index'
 
-function App () {
-  const [count, setCount] = useState(0)
+// changeHandler = (evt) => {
+
+// }
+
+// addToCount = (count) => {
+//   this.setState({
+//     count: count
+//   })
+// }
+
+// componentDidMount () {
+//   const { addToCount } = this.props
+//   addToCount()
+// }
+
+// onClick = () => {
+//   increaseCount(this.state)
+// }
+
+function App ({ addToCount, myCount }) {
   return (
     <div className="App">
-      <button onClick={() => setCount(count + 1)}>{ count }</button>
+      <button onClick={addToCount}
+      >{ myCount }
+      </button>
     </div>)
 }
 
-export default App
+const mapDispatchToProps = {
+  addToCount
+}
+
+const mapStateToProps = (state) => {
+  return {
+    myCount: state.count
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)

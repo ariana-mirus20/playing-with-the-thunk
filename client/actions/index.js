@@ -1,9 +1,7 @@
-let nextWordId = 0
+export const INCREMENT_COUNT = 'INCREMENT_COUNT'
 
-export const addWord = (word) => {
+export function addToCount () {
   return {
-    type: 'ADD_WORD',
-    id: nextWordId++,
-    word
+    type: INCREMENT_COUNT
   }
 }
