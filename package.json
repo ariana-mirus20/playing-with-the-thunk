@@ -24,7 +24,7 @@
     ]
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.13.5"
   },
